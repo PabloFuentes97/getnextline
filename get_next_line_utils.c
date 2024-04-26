@@ -6,7 +6,7 @@
 /*   By: pfuentes <pfuentes@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/09 13:03:09 by pfuentes          #+#    #+#             */
-/*   Updated: 2022/10/20 12:11:07 by pfuentes         ###   ########.fr       */
+/*   Updated: 2023/02/08 13:34:15 by pfuentes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,7 +107,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		array[cont_join] = s1[cont_join];
 		cont_join++;
 	}
-	free ((char *)s1);
 	while (s2[cont_s] != '\0')
 	{
 		array[cont_join] = s2[cont_s];

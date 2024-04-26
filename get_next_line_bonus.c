@@ -6,11 +6,11 @@
 /*   By: pfuentes <pfuentes@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/09 13:03:09 by pfuentes          #+#    #+#             */
-/*   Updated: 2022/10/20 12:11:12 by pfuentes         ###   ########.fr       */
+/*   Updated: 2024/04/26 17:28:18 by pfuentes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 int	ft_str_newline(char *str)
 {

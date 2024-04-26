@@ -6,11 +6,11 @@
 /*   By: pfuentes <pfuentes@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/09 13:03:09 by pfuentes          #+#    #+#             */
-/*   Updated: 2022/10/20 12:11:07 by pfuentes         ###   ########.fr       */
+/*   Updated: 2024/04/26 17:28:34 by pfuentes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 #include <stdio.h>
 #include <sys/fcntl.h>

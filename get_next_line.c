@@ -6,13 +6,13 @@
 /*   By: pfuentes <pfuentes@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/09 13:03:09 by pfuentes          #+#    #+#             */
-/*   Updated: 2022/10/20 12:11:19 by pfuentes         ###   ########.fr       */
+/*   Updated: 2023/03/24 11:51:40 by pfuentes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-int	ft_str_newline(char *str)
+static int	ft_str_newline(char *str)
 {
 	int	cont;
 
@@ -28,7 +28,7 @@ int	ft_str_newline(char *str)
 	return (0);
 }
 
-char	*create_new_stash(char *stash)
+static char	*create_new_stash(char *stash)
 {
 	char	*new_stash;
 	int		cont;
@@ -51,7 +51,7 @@ char	*create_new_stash(char *stash)
 	return (new_stash);
 }
 
-char	*create_line(char *stash)
+static char	*create_line(char *stash)
 {
 	char	*line;
 	size_t	cont;
@@ -70,7 +70,7 @@ char	*create_line(char *stash)
 	return (line);
 }
 
-char	*create_stash(char *stash, int fd)
+static char	*create_stash(char *stash, int fd)
 {
 	char	*buf;
 	int		bytes;
@@ -89,7 +89,7 @@ char	*create_stash(char *stash, int fd)
 		{
 			if (!stash)
 				stash = ft_calloc(1, 1);
-			stash = ft_strjoin(stash, buf);
+			stash = aux_join(stash, buf);
 		}
 	}
 	if (buf)
